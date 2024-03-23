@@ -5,6 +5,29 @@
     <title>Mi primera web</title>
 </head>
 <body>
+
+    <!-- Lista no ordenada -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <ol>
+        <li value="10">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+            <ol style="list-style-type: lower-greek">
+                <li>SubItem 1</li>
+                <li>SubItem 2</li>
+                <li>SubItem 3</li>
+                <li>SubItem 4</li>
+            </ol>
+        <li>Item 4</li>
+    </ol>
+
+
     <form action="/formulario" method="POST">
         <label for="name_edt">Nombre</label>
         <input 
