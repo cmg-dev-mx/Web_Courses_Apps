@@ -5,9 +5,10 @@
     <title>Mi primera web</title>
 </head>
 <body>
-    <form action="/formulario" method="GET">
+    <form action="/formulario" method="POST">
         <label for="name_edt">Nombre</label>
         <input 
+            value="Juan"
             id="name_edt" 
             name="nombre" 
             placeholder="Escriba su nombre" 
@@ -19,6 +20,7 @@
         <br>
         <label for="lastName_edt">Apellido</label>
         <input 
+            value="Pérez"
             id="lastName_edt" 
             name="apellido" 
             placeholder="Escriba su apellido" 
@@ -30,7 +32,7 @@
             name="comentario" 
             placeholder="Escriba su comentario" 
             cols="30" 
-            rows="10"></textarea>
+            rows="10">Este es un valor por defecto</textarea>
         <br>
         <input type="submit" />
     </form>
