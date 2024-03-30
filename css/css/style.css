@@ -29,7 +29,7 @@ div h2, div h3 {
     /* color: red; */
     /* color: #F00;  RRGGBB */
     /* color: rgb(255, 0, 0); */
-    border: 5px dotted black;
+    /* border: 5px dotted black; */
     /* 
     dotted
     dashed
@@ -43,4 +43,19 @@ div h2, div h3 {
     hidden
     */
 
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    /* border-width: 5px; */
+    border-width: 5px;
+    /* 
+    px - pixeles
+    cm - centimetros
+    mm - milimetros
+    in - pulgadas
+    pt - puntos
+    pc - pica
+    em - relativo al tamaño de la fuente del elemento
+    rem - relativo al tamaño de la fuente de la raiz (html)
+    */
 }
