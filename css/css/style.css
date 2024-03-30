@@ -97,4 +97,25 @@ div h2, div h3 {
     hidden
     scroll
     */
+
+    outline: 1px red solid /* borde fuera del borde*/
+}
+
+.text {
+    text-align: justify;
+    /* 
+    left
+    right
+    center
+    justify
+    */
+    text-decoration: underline;
+    /* 
+    none
+    underline
+    overline
+    line-through
+    */
+    /* izquierda abajo difuminado color */
+    text-shadow: 3px 5px 5px blue;
 }
