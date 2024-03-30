@@ -229,3 +229,11 @@ span {
     height: 55px;
     background-color: rebeccapurple;
 }
+
+.center {
+    padding: 50px 0px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}
