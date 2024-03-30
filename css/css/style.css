@@ -176,3 +176,13 @@ tr:hover {
     background-color: #aaa;
     cursor: pointer;
 }
+
+span {
+    /* display: block; */
+    /* display: none; */
+    visibility: hidden;
+}
+
+.inline {
+    display: inline;
+}
