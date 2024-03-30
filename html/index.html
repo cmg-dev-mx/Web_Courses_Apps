@@ -1,128 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
-    <title>Mi primera web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
 </head>
 <body>
+    <header id="titulo">
+        <h1>Blog de Cesar</h1>
+    </header>
 
-    <table style="width: 500px;">
-        <thead>    
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Café</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Té</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>Agua</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Leche evaporada ultrapasteurizada</td>
-                <td>2</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td></td>
-                <td>Total: 11</td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <!-- Lista no ordenada -->
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-
-    <!-- Lista ordenada -->
-    <ol>
-        <li value="10">Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-            <ol style="list-style-type: lower-greek">
-                <li>SubItem 1</li>
-                <li>SubItem 2</li>
-                <li>SubItem 3</li>
-                <li>SubItem 4</li>
-            </ol>
-        <li>Item 4</li>
-    </ol>
-
-
-    <form action="/formulario" method="POST">
-        <label for="name_edt">Nombre</label>
-        <input 
-            value="Juan"
-            id="name_edt" 
-            name="nombre" 
-            placeholder="Escriba su nombre" 
-            type="text" />
-        <!-- 
-            Los tipos de input pueden ser:
-            text, password, email, number, date, file, radio, checkbox, submit.
-         -->
-        <br>
-        <label for="lastName_edt">Apellido</label>
-        <input 
-            value="Pérez"
-            id="lastName_edt" 
-            name="apellido" 
-            placeholder="Escriba su apellido" 
-            type="text" />
-        <br>
-        <label for="comentario_edt">Comentario</label>
-        <textarea
-            id="comentario_edt"
-            name="comentario" 
-            placeholder="Escriba su comentario" 
-            cols="30" 
-            rows="10">Este es un valor por defecto</textarea>
-        <br>
-        <button type="button">
-            <img src="img/coffee.jpeg" width="40">
-            Botón de tipo button
-        </button>
-        <br>
-        <button type="reset">Limpiar campos</button>
-        <br>
-        <button type="submit">Enviar</button>
-    </form>
-    <h1>Mi primer heading</h1>
-    <h2>Mi segundo heading</h2>
-    <h3>Mi tercer heading</h3>
-    <h4>Mi cuarto heading</h4>
-    <h5>Mi quinto heading</h5>
-    <h6>Mi sexto heading</h6>
-    <p>Ejemplo de párrafo en el documento</p>
-    <p>Ejemplo de segundo párrafo</p>
-    <hr>
-    <h2>Segundo bloque de contenido</h2>
-    <p>Este es un ejemplo <br>de <span style="color:blueviolet">segundo bloque</span> <br>de contenido separado</p>
-    <!-- Comentario dentro del código, no visible en la página, pero si en el código fuente -->
-
-    <a target="_blank" href="https://www.google.com">Ir a Google</a>
-    <br>
-    <br>
-    <img src="img/coffee.jpeg" width="200" height="300">
-
+    <section class="container">
+        <article class="post">
+            <h2>Título de mi post</h2>
+            <p>Descripción de mi post</p>
+            <img src="img/coffee.jpeg" width="200" />
+            <p>Texto del artículo que hay acá y es texto de prueba.</p>
+        </article>
+        <article class="post">
+            <h2>Título de mi post 2</h2>
+            <p>Descripción de mi post 2</p>
+            <img src="img/tea.jpeg" width="200" />
+            <p>Texto del artículo 2 que hay acá y es texto de prueba.</p>
+        </article>
+        <article class="post">
+            <h2>Título de mi post 3</h2>
+            <p>Descripción de mi post 3</p>
+            <img src="img/milkshake.jpeg" width="200" />
+            <p>Texto del artículo 3 que hay acá y es texto de prueba.</p>
+    </section>
+    <footer>
+        <section>
+            <a href="#titulo">Ir al inicio</a>
+            <a href="mailto:mail@mail.com">Contáctame aquí</a>
+        </section>
+        <p>Copyright 2024</p>
+    </footer>
 </body>
-
 </html>
