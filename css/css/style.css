@@ -201,3 +201,24 @@ span {
     left: 20px;
     top: 25px;
 }
+
+.container {
+    height: 200px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.column {
+    
+    margin: 0px;
+    padding: 10px 0px;
+    width: 33.3%;
+}
