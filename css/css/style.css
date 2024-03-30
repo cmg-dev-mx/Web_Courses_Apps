@@ -222,3 +222,10 @@ span {
     padding: 10px 0px;
     width: 33.3%;
 }
+
+/* Display como bloque para poder agregar tamaño al elemento */
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: rebeccapurple;
+}
