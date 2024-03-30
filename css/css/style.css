@@ -178,9 +178,11 @@ tr:hover {
 }
 
 span {
-    /* display: block; */
+    display: block;
+    max-width: 300px;
+    background-color: red;
     /* display: none; */
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .inline {
