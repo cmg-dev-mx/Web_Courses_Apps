@@ -29,6 +29,7 @@ div h2, div h3 {
     /* color: red; */
     /* color: #F00;  RRGGBB */
     /* color: rgb(255, 0, 0); */
+    /* color: rgba(255, 0, 0, 0.5); */
     /* border: 5px dotted black; */
     /* 
     dotted
@@ -58,4 +59,21 @@ div h2, div h3 {
     em - relativo al tamaño de la fuente del elemento
     rem - relativo al tamaño de la fuente de la raiz (html)
     */
+}
+
+#fondo {
+    /* background-color: rgb(255, 0, 0); */
+    /* opacity: 0.5; Opacidad del elemento */
+    /* background-image: url('../coffee.jpeg'); */
+    /* background-size: 100px 100px; */
+    /* 
+    auto
+    cover
+    contain
+    400px 400px - Ancho y alto
+    */
+    /* background-repeat: no-repeat; */
+    /* background-position: left top; */
+    background : #F00 url('../coffee.jpeg') no-repeat center center / 200px 200px;
+    height: 400px;
 }
