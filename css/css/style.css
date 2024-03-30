@@ -26,7 +26,21 @@ div h2, div h3 {
 /* Este es un comentario */
 
 .color {
-    color: red;
+    /* color: red; */
     /* color: #F00;  RRGGBB */
     /* color: rgb(255, 0, 0); */
+    border: 5px dotted black;
+    /* 
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+
 }
