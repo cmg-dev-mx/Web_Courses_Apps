@@ -144,6 +144,35 @@ ul{
     /* Quitar el estilo de lista */
     /* list-style-type: none;
     padding-left: 0px; */
-    
+
     list-style-position: inside;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+/* 
+    odd  - par
+    even - impar
+*/
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
 }
