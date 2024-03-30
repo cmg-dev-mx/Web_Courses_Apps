@@ -20,7 +20,7 @@ div h2, div h3 {
 
 * {
     font-size: 24px;
-    color: black;
+    /* color: black; */
 }
 
 /* Este es un comentario */
@@ -120,4 +120,20 @@ div h2, div h3 {
     text-shadow: 3px 5px 5px blue;
 
     font-family: "Share Tech", sans-serif;
+}
+
+a:link { /* No visitado */
+    color: blueviolet;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
 }
