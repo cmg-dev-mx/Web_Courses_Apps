@@ -188,3 +188,16 @@ span {
 .inline {
     display: inline;
 }
+
+#position {
+    position: sticky;
+     /* 
+        static   - Por defecto
+        relative - Relativo a su posición original
+        absolute - Relativo al padre más cercano
+        fixed    - Relativo a la ventana
+        sticky   - Relativo al scroll
+     */
+    left: 20px;
+    top: 25px;
+}
