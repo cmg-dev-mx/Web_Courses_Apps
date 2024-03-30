@@ -24,3 +24,9 @@ div h2, div h3 {
 }
 
 /* Este es un comentario */
+
+.color {
+    color: red;
+    /* color: #F00;  RRGGBB */
+    /* color: rgb(255, 0, 0); */
+}
