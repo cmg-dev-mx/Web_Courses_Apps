@@ -1,0 +1,239 @@
+#titulo {
+    color: tomato;
+}
+
+p.texto {
+    color: slateblue;
+}
+
+p.especial {
+    color:mediumseagreen;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    /* color: black; */
+}
+
+/* Este es un comentario */
+
+.color {
+    /* color: red; */
+    /* color: #F00;  RRGGBB */
+    /* color: rgb(255, 0, 0); */
+    /* color: rgba(255, 0, 0, 0.5); */
+    /* border: 5px dotted black; */
+    /* 
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    /* border-width: 5px; */
+    border-width: 5px;
+    /* 
+    px - pixeles
+    cm - centimetros
+    mm - milimetros
+    in - pulgadas
+    pt - puntos
+    pc - pica
+    em - relativo al tamaño de la fuente del elemento
+    rem - relativo al tamaño de la fuente de la raiz (html)
+    */
+}
+
+#fondo {
+    /* background-color: rgb(255, 0, 0); */
+    /* opacity: 0.5; Opacidad del elemento */
+    /* background-image: url('../coffee.jpeg'); */
+    /* background-size: 100px 100px; */
+    /* 
+    auto
+    cover
+    contain
+    400px 400px - Ancho y alto
+    */
+    /* background-repeat: no-repeat; */
+    /* background-position: left top; */
+    background : #F00 url('../coffee.jpeg') no-repeat center center / 200px 200px;
+    height: 400px;
+}
+
+.margen {
+    background-color: chocolate;
+    /* Arriba Derecha Abajo Izquierda */
+    /* margin: 15px 20px 25px 30px; */
+    margin: 15px;
+    /* padding: 30px 25px 20px 15px; */
+    /* Superior Horizontal Inferior */
+    padding: 30px 15px 5px;
+    /* Vertical horizontal */
+    padding: 30px 15px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: hidden;
+    /* 
+    visible
+    hidden
+    scroll
+    */
+
+    outline: 1px red solid /* borde fuera del borde*/
+}
+
+.text {
+    text-align: justify;
+    /* 
+    left
+    right
+    center
+    justify
+    */
+    text-decoration: underline;
+    /* 
+    none
+    underline
+    overline
+    line-through
+    */
+    /* izquierda abajo difuminado color */
+    text-shadow: 3px 5px 5px blue;
+
+    font-family: "Share Tech", sans-serif;
+}
+
+a:link { /* No visitado */
+    color: blueviolet;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+ul{
+    width: 200px;
+    background-color: cyan;
+    /* Quitar el estilo de lista */
+    /* list-style-type: none;
+    padding-left: 0px; */
+
+    list-style-position: inside;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+/* 
+    odd  - par
+    even - impar
+*/
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    max-width: 300px;
+    background-color: red;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    position: sticky;
+     /* 
+        static   - Por defecto
+        relative - Relativo a su posición original
+        absolute - Relativo al padre más cercano
+        fixed    - Relativo a la ventana
+        sticky   - Relativo al scroll
+     */
+    left: 20px;
+    top: 25px;
+}
+
+.container {
+    height: 200px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.column {
+    
+    margin: 0px;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+
+/* Display como bloque para poder agregar tamaño al elemento */
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: rebeccapurple;
+}
+
+.center {
+    padding: 50px 0px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}
