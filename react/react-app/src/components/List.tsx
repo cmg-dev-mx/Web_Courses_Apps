@@ -3,10 +3,18 @@ type Props = {
 };
 
 function List({ data }: Props) {
+  const handleClick = (e: string) => {
+    console.log(e);
+  };
+
   return (
     <ul className="list-group">
       {data.map((item) => (
-        <li key={item} className="list-group-item">
+        <li
+          onClick={() => handleClick(item)}
+          key={item}
+          className="list-group-item"
+        >
           {item}
         </li>
       ))}
