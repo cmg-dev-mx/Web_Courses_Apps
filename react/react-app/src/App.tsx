@@ -1,9 +1,8 @@
-import Titulo from "./Titulo";
-
+import Card from "./components/Card";
 
 function App() {
   // JSX
-  return <Titulo />;
+  return <Card />;
 }
 
 export default App;
