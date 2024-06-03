@@ -8,17 +8,21 @@ function App() {
     console.log(`Elemento seleccionado: ${elemento}`);
   };
 
+  // const contenido = list.length ? (
+  //   <List data={list} onSelect={handleSelect} />
+  // ) : (
+  //   "Sin elementos para mostrar"
+  // );
+
+  const contenido = list.length !== 0 && (
+    <List data={list} onSelect={handleSelect} />
+  );
+
   // JSX
   return (
     <Card>
-      {/* {"" && "string vacio"}
-      {undefined && "string indefinido"}
-      {null && "string nulo"}
-      {false && "falso"}
-      {0 && "numero cero"} */}
-      {list2.length !== 0 && "Mi lista"}
       <CardBody title="Hola Mundo" content="Este es el texto" />
-      <List data={list} onSelect={handleSelect} />
+      {contenido}
     </Card>
   );
 }
