@@ -1,38 +1,31 @@
 import { useState } from "react";
 import Button from "./components/Button";
-import Card, { CardBody } from "./components/Card";
+import Card from "./components/Card";
 import List from "./components/List";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false);
-  const handleClick = () => {
-    setIsLoading(!isLoading);
-  };
-
-  const list = ["Goku", "Vegeta", "Gohan", "Trunks", "Goten"];
-  const list2: string[] = [];
+  const [list, setList] = useState(["Goku", "Vegeta", "Gohan"]);
   const handleSelect = (elemento: string) => {
     console.log(`Elemento seleccionado: ${elemento}`);
   };
 
-  // const contenido = list.length ? (
-  //   <List data={list} onSelect={handleSelect} />
-  // ) : (
-  //   "Sin elementos para mostrar"
-  // );
+  const handleAdd = () => {
+    setList([...list, "Piccolo"]);
+  };
+
+  const handleDelete = () => {
+    setList(list.slice(0, list.length - 1));
+  };
 
   const contenido = list.length !== 0 && (
     <List data={list} onSelect={handleSelect} />
   );
 
-  // JSX
   return (
     <Card>
-      <CardBody title="Hola Mundo" content="Este es el texto" />
+      <Button onClick={handleAdd}>Agregar</Button>
+      <Button onClick={handleDelete}>Eliminar</Button>
       {contenido}
-      <Button isLoading={isLoading} onClick={handleClick}>
-        Click me!
-      </Button>
     </Card>
   );
 }
